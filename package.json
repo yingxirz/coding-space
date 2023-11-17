@@ -1,0 +1,70 @@
+{
+  "name": "coding-space",
+  "version": "0.0.1",
+  "description": "A react library developed with dumi",
+  "license": "MIT",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "ci": "npm run type-check && npm run lint && npm run lint:style",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "eslint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:md": "remark . --quiet --frail --output",
+    "lint:style": "stylelint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "prettier": "prettier -c --write --no-error-on-unmatched-pattern \"**/**\"",
+    "start": "npm run dev",
+    "type-check": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.md": [
+      "remark --quiet --output --",
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.json": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write",
+      "stylelint --fix",
+      "eslint --fix"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --parser=typescript --write",
+      "stylelint --fix",
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@lobehub/lint": "^1",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "dumi": "^2",
+    "eslint": "^8",
+    "father": "^4",
+    "husky": "^8",
+    "lint-staged": "^13",
+    "prettier": "^3",
+    "react": "^18",
+    "react-dom": "^18",
+    "remark": "^14",
+    "remark-cli": "^11",
+    "stylelint": "^14"
+  },
+  "peerDependencies": {
+    "react": ">=8",
+    "react-dom": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": []
+}
