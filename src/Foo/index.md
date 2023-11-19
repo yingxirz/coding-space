@@ -1,9 +1,9 @@
-# Foo
+# Tools
 
 This is an example component.
 
 ```jsx
-import { Foo } from 'coding-space';
+import { Tools } from 'coding-space';
 
-export default () => <Foo title="Hello dumi!" />;
+export default () => <Tools title="Hello dumi!" />;
 ```

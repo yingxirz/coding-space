@@ -1,11 +1,11 @@
----
+<!-- ---
 hero:
-  title: library
-  description: A react library developed with dumi
+  title: Welcome
+  description: A website developed by newbie
   actions:
-    - text: Hello
+    - text: Don't know go where
       link: /
-    - text: World
+    - text: right now
       link: /
 features:
   - title: Hello
@@ -17,6 +17,6 @@ features:
   - title: '!'
     emoji: 🚀
     description: Put ! description here
----
+--- -->
 
-coding-space
+<div dangerouslySetInnerHTML={{ __html: require('!!raw-loader!../home.html').default }} />
