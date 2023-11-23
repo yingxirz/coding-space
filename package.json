@@ -43,6 +43,10 @@
       "eslint --fix"
     ]
   },
+  "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.508"
+  },
   "devDependencies": {
     "@lobehub/lint": "^1",
     "@types/react": "^18",
