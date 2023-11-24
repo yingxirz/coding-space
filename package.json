@@ -24,6 +24,12 @@
     "start": "npm run dev",
     "type-check": "tsc --noEmit"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "allowEmptyCommit": true
+    }
+  },
   "lint-staged": {
     "*.md": [
       "remark --quiet --output --",
