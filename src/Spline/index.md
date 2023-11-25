@@ -1,8 +1,9 @@
-# SplineTest
+# Spline
 
 This is an example component.
 
 ```jsx
+// <code src="/index.tsx"></code>
 import Spline from '@splinetool/react-spline';
 import React from 'react';
 

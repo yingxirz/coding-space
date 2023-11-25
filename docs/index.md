@@ -6,7 +6,7 @@ hero:
     - text: Don't know go where
       link: /
     - text: right now
-      link: /
+      link: /git
 features:
   - title: Hello
     emoji: 💎
