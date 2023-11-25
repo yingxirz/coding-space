@@ -1,17 +1,20 @@
 import React from 'react';
 
-import './card.css';
+import './Card.css';
 
 interface CardProps {
   content: string;
   title: string;
 }
 
+// const App = () => {
+//   const [isHovered, setIsHovered] = useState(false);
+
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="card">
-      <h2 className="card-title">{title}</h2>
-      <p className="card-content">{content}</p>
+      <h2>{title}</h2>
+      <p>{content}</p>
     </div>
   );
 };

@@ -5,17 +5,16 @@ This is an example component.
 ```jsx
 import React from 'react';
 
-import Card from './index.tsx';
+import CardList from './CardList';
 
-const App = () => {
+const ParentComponent = () => {
   return (
     <div>
-      <Card title="Card Title 1" content="This is the content of Card 1." />
-      <Card title="Card Title 2" content="This is the content of Card 2." />
-      <Card title="Card Title 3" content="This is the content of Card 3." />
+      <h1>Grid Card List</h1>
+      <CardList />
     </div>
   );
 };
 
-export default App;
+export default ParentComponent;
 ```
