@@ -7,14 +7,13 @@
     margin-bottom: 16px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
     margin-right: 16px;
-    animation: changeColor 3s ease-out infinite;
     transition: all 0.3s ease-out;
   }
 
   .card.hover {
     transform: skew(2deg, 4deg);
-    border-left: 4px solid rgb(101, 255, 204);
-    border-bottom: 3px solid rgb(101, 255, 204);
+    border-left: 6px solid rgb(101, 255, 204);
+    border-bottom: 4px solid rgb(101, 255, 204);
     animation: borderColor 3s ease-out infinite;
   }
 
@@ -26,23 +25,6 @@
   .card p {
     font-size: 14px;
   }
-
-@keyframes changeColor {
-  0% {
-    box-shadow: 0 2px 16px rgb(106, 255, 101);
-  }
-
-  30% {
-    box-shadow: 0 2px 16px aqua;
-  }
-
-  70% {
-    box-shadow :0 2px 16px rgba(17, 0, 255, 0);
-  }
-  100% {
-    box-shadow: 0 2px 16px rgb(106, 255, 101);
-  }
-}
   
 @keyframes borderColor {
   0% {
