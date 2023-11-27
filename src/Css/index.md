@@ -1,6 +1,6 @@
 # Css
 
-This is an example component.
+使用 Transition，Grid，animation 功能实现见的的交互卡片。
 
 ```jsx
 import React from 'react';
