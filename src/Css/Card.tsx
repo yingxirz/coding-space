@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Card.css';
 
@@ -7,12 +7,23 @@ interface CardProps {
   title: string;
 }
 
-// const App = () => {
-//   const [isHovered, setIsHovered] = useState(false);
-
 const Card: React.FC<CardProps> = ({ title, content }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className="card">
+    <div
+      className={`card ${isHovered ? 'hover' : ''}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <h2>{title}</h2>
       <p>{content}</p>
     </div>

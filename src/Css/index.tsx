@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Card from './Card.tsx';
-import './CardList.css';
+import Card from './card';
+import './cardList.css';
 
 interface ListItem {
   content: string;
@@ -27,10 +27,10 @@ let list: ListItem[] = [
 const CardList = () => {
   return (
     <div className="container">
-        {list.map((item, index) => (
-          <Card content={item.content} key={index} title={item.title} />
-        ))}
-      </div>
+      {list.map((item, index) => (
+        <Card content={item.content} key={index} title={item.title} />
+      ))}
+    </div>
   );
 };
 

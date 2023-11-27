@@ -5,7 +5,8 @@ This is an example component.
 ```jsx
 import React from 'react';
 
-import CardList from './CardList';
+import Card from './card.tsx';
+import CardList from './index.tsx';
 
 const ParentComponent = () => {
   return (

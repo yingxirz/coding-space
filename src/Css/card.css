@@ -1,17 +1,20 @@
 
 .card {
     background-color: transparent;
-    border: 1px solid #e8e8e8;
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 16px;
     padding: 16px;
     margin-bottom: 16px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-    transition: border-color 0.3s ease;
     margin-right: 16px;
+    animation: changeColor 3s ease-out infinite;
+    transition: all 0.3s ease-out;
   }
-/* .card:nth-child(3n+0) {
-    margin-right: 0px;
-} */
+
+  .card.hover {
+    transform: skew(2deg, 4deg);
+    border-bottom: 4px solid rgb(101, 148, 255);
+  }
 
   .card h2 {
     font-size: 18px;
@@ -22,6 +25,20 @@
     font-size: 14px;
   }
 
-  .card.hovered {
-    border-color: linear-gradient(to right, #ff0000, #0000ff);
+@keyframes changeColor {
+  0% {
+    box-shadow: 0 2px 16px rgb(106, 255, 101);
   }
+
+  30% {
+    box-shadow: 0 2px 16px aqua;
+  }
+
+  70% {
+    box-shadow :0 2px 16px rgba(17, 0, 255, 0);
+  }
+  100% {
+    box-shadow: 0 2px 16px rgb(106, 255, 101);
+  }
+}
+  
