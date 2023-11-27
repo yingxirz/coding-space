@@ -13,7 +13,9 @@
 
   .card.hover {
     transform: skew(2deg, 4deg);
-    border-bottom: 4px solid rgb(101, 148, 255);
+    border-left: 4px solid rgb(101, 255, 204);
+    border-bottom: 3px solid rgb(101, 255, 204);
+    animation: borderColor 3s ease-out infinite;
   }
 
   .card h2 {
@@ -42,3 +44,17 @@
   }
 }
   
+@keyframes borderColor {
+  0% {
+    border-color: rgb(101, 255, 204);
+  }
+  30% {
+    border-color: aqua;
+  }
+  70% {
+    border-color: rgb(0, 136, 255);
+  }
+  100% {
+    border-color: rgb(101, 255, 204);
+  }
+}
