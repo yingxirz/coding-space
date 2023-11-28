@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './Card.css';
+import './card.css';
 
 interface CardProps {
   content: string;
