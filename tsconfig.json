@@ -8,8 +8,9 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "coding-space": ["src"],
-      "coding-space/*": ["src/*", "*"]
+      "@/*": ["src/*"],
+      "@coding-space": ["src"],
+      "@coding-space/*": ["src/*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]
