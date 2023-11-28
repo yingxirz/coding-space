@@ -42,3 +42,5 @@ test-output
 
 # misc
 # add other ignore file below
+docs-dist
+pnpm-lock.yaml

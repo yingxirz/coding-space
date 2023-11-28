@@ -6,4 +6,5 @@ export default defineConfig({
     name: 'YinXi',
     logo: '/logo.png',
   },
+  cssLoader: {},
 });
