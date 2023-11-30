@@ -1,20 +1,9 @@
 ---
-hero:
-  title: Welcome
-  description: A website developed by newbie
-  actions:
-    - text: Don't know go where
-      link: /
-    - text: right now
-      link: /git
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
+# hero:
+#   # title: Welcome
+#   description: A website developed by newbiedudui n d
 ---
+
+<code src="./index.tsx" inline></code>
+
+<!-- <iframe src="http://127.0.0.1:5501/docs/blackhole.html" width="100%" height="500px"></iframe> -->
